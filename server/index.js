@@ -17,10 +17,10 @@ app.use(session({
     }
 }))
 
-massive(config.connection)
-.then( db => {
-  app.set('db', db);
-})
+// massive(config.connection)
+// .then( db => {
+//   app.set('db', db);
+// })
 
 app.use(express.static(__dirname + './../build'))
 
