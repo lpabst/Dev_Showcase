@@ -7,16 +7,21 @@
 }
 
 .nav_list{
-    width: 60%;
+    width: 480px;
     height: 60px;
     position: absolute;
     right: 20px;
+    line-height: 60px;
     display: flex;
     justify-content: space-between;
 }
 
 .nav_list a{
     color: #eee;
+    cursor: pointer;
 }
 
-
+.nav_list a:hover{
+    border-bottom: 5px solid #8388FE;
+    color: #8388FE;
+}
