@@ -7,11 +7,11 @@ class Home extends Component {
 
   render() {
     return (
-      <div className="home">
+      <section className="home">
 
           Home Page
 
-      </div>
+      </section>
     );
   }
 }

@@ -54,7 +54,7 @@ class NavHeader extends Component {
     }
 
     return (
-      <div className="nav_header">
+      <section className="nav_header">
 
         <div className='ham' onClick={ this.openMobileMenu } style={hamStyle}>...</div>
 
@@ -67,7 +67,7 @@ class NavHeader extends Component {
             <Link to='/events'>Events</Link>
         </ul>
 
-      </div>
+      </section>
     );
   }
 }

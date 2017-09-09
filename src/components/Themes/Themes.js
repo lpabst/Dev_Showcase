@@ -7,11 +7,11 @@ class Themes extends Component {
 
   render() {
     return (
-      <div className="themes">
+      <section className="themes">
 
           Themes Page
 
-      </div>
+      </section>
     );
   }
 }

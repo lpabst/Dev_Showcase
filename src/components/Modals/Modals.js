@@ -7,11 +7,11 @@ class Modals extends Component {
 
   render() {
     return (
-      <div className="modals">
+      <section className="modals">
 
           Modals Page
 
-      </div>
+      </section>
     );
   }
 }

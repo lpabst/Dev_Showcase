@@ -7,11 +7,11 @@ class Events extends Component {
 
   render() {
     return (
-      <div className="events">
+      <section className="events">
 
           Events Page
 
-      </div>
+      </section>
     );
   }
 }

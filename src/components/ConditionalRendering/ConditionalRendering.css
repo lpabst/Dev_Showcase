@@ -1,8 +1,71 @@
 
 .conditional_rendering{
-
+    /* padding: 20px 20px 30px 20px; */
 }
 
+.cr_header{
+    color: #000;
+    text-shadow: 0.5px 0.5px 0.5px #444;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background: url('https://www.deon.pl/gfx/deon/pl/defaultaktualnosci/224/2922/1/d1289108860.jpg')center no-repeat;
+    background-size: cover;
+}
 
+.cr_header h2{
+    width: 100%;
+    text-align: center;
+}
+
+.cr_header p{
+    width: 60%;
+    position: relative;
+    left: 20%;
+    font-size: 13px;
+    line-height: 15px;
+}
+
+.cr_example1{
+    padding-top: 120px;
+    padding-bottom: 120px;
+    padding-left: calc(50% - 150px);
+    background: url('https://www.bensound.com/bensound-img/november.jpg')left no-repeat;
+    background-size: 200%;
+}
+
+.cr_example1 button{
+    margin-left: 18px;
+}
+
+.example_wrapper{
+    width: 100%;
+    height: 55px;
+    position: relative;
+}
+
+.example_box{
+    width: 80px;
+    height: 40px;
+    position: absolute;
+    top: 5px;
+    border-radius: 2px;
+    box-shadow: 2px 2px 4px black;
+    z-index: 5;
+}
+
+.one{
+    left: 10px;
+    background: blue;
+}
+
+.two{
+    left: 100px;
+    background: red;
+}
+
+.three{
+    left: 190px;
+    background: green;
+}
 
 
