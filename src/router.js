@@ -7,6 +7,7 @@ import ConditionalRendering from './components/ConditionalRendering/ConditionalR
 import Themes from './components/Themes/Themes.js';
 import Modals from './components/Modals/Modals.js';
 import Events from './components/Events/Events.js';
+import Charts from './components/Charts/Charts.js';
 
 
 export default (
@@ -17,6 +18,7 @@ export default (
         <Route component={ Themes } path='/themes' exact />
         <Route component={ Modals } path='/modals' exact />
         <Route component={ Events } path='/events' exact /> 
+        <Route component={ Charts } path='/charts' exact /> 
 
     </Switch>
 )
