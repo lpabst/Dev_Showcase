@@ -20,6 +20,9 @@ class ConditionalRendering extends Component {
     this.toggleMobileMenu1 = this.toggleMobileMenu1.bind(this);
     this.toggleMobileMenu2 = this.toggleMobileMenu2.bind(this);
     this.toggleMobileMenu3 = this.toggleMobileMenu3.bind(this);
+    this.closeMobileMenu1 = this.closeMobileMenu1.bind(this);
+    this.closeMobileMenu2 = this.closeMobileMenu2.bind(this);
+    this.closeMobileMenu3 = this.closeMobileMenu3.bind(this);
   }
 
   toggleExample1(){
@@ -55,6 +58,24 @@ class ConditionalRendering extends Component {
   toggleMobileMenu3(){
     this.setState({
       showMobileMenu3: !this.state.showMobileMenu3
+    })
+  }
+  
+  closeMobileMenu1(){
+    this.setState({
+      showMobileMenu1: false
+    })
+  }
+  
+  closeMobileMenu2(){
+    this.setState({
+      showMobileMenu2: false
+    })
+  }
+  
+  closeMobileMenu3(){
+    this.setState({
+      showMobileMenu3: false
     })
   }
 
@@ -117,8 +138,6 @@ class ConditionalRendering extends Component {
       }
     }
 
-
-
     return (
       <section className="conditional_rendering">
 
@@ -128,6 +147,7 @@ class ConditionalRendering extends Component {
         </section>
 
         <section className='cr_example1'>
+          <h2>Here is a simple example</h2>
           <div className='example_wrapper'>
             { example1 }
             { example2 }
@@ -140,18 +160,18 @@ class ConditionalRendering extends Component {
 
         <section className='cr_example2'>
           <h2>Mobile Menus</h2>
-          <p>Mobile menus are a great example of when to use conditional rendering. When the user clicks on the menu icon, the menu should toggle, as well as closing the menu based on other actions, such as scrolling, navigation through the website, etc...</p>
+          <p>Mobile menus are a great example of when to use conditional rendering. When the user clicks on the menu icon, the menu should toggle, as well as closing the menu based on other actions, such as clicking on one of the items in the menu. While the items in these menus won't actually navigate elsewhere, feel free to click them to see the menu close!</p>
           <div className='example_wrapper2'>
 
             <button onClick={ this.toggleMobileMenu1 }>Slide left</button>
             <div className='phone'>
               <div className='phone_screen'>
                 <ul className='cr_mobile_menu mobilemenu1' style={mm1Style}>
-                  <li>Home</li>
-                  <li>Conditional Rendering</li>
-                  <li>Themes</li>
-                  <li>Modals</li>
-                  <li>Events</li>
+                  <li onClick={ this.closeMobileMenu1 }>Home</li>
+                  <li onClick={ this.closeMobileMenu1 }>Conditional Rendering</li>
+                  <li onClick={ this.closeMobileMenu1 }>Themes</li>
+                  <li onClick={ this.closeMobileMenu1 }>Modals</li>
+                  <li onClick={ this.closeMobileMenu1 }>Events</li>
                 </ul>
               </div>
             </div>
@@ -160,11 +180,11 @@ class ConditionalRendering extends Component {
             <div className='phone'>
               <div className='phone_screen'>
                 <ul className='cr_mobile_menu mobilemenu2' style={mm2Style}>
-                  <li>Home</li>
-                  <li>Conditional Rendering</li>
-                  <li>Themes</li>
-                  <li>Modals</li>
-                  <li>Events</li>
+                  <li onClick={ this.closeMobileMenu2 }>Home</li>
+                  <li onClick={ this.closeMobileMenu2 }>Conditional Rendering</li>
+                  <li onClick={ this.closeMobileMenu2 }>Themes</li>
+                  <li onClick={ this.closeMobileMenu2 }>Modals</li>
+                  <li onClick={ this.closeMobileMenu2 }>Events</li>
                 </ul>
               </div>
             </div>
@@ -173,11 +193,11 @@ class ConditionalRendering extends Component {
             <div className='phone'>
               <div className='phone_screen'>
                 <ul className='cr_mobile_menu mobilemenu3' style={mm3Style}>
-                  <li>Home</li>
-                  <li>Conditional Rendering</li>
-                  <li>Themes</li>
-                  <li>Modals</li>
-                  <li>Events</li>
+                  <li onClick={ this.closeMobileMenu3 }>Home</li>
+                  <li onClick={ this.closeMobileMenu3 }>Conditional Rendering</li>
+                  <li onClick={ this.closeMobileMenu3 }>Themes</li>
+                  <li onClick={ this.closeMobileMenu3 }>Modals</li>
+                  <li onClick={ this.closeMobileMenu3 }>Events</li>
                 </ul>
               </div>
             </div>

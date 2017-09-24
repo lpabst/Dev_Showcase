@@ -6,7 +6,7 @@
 .cr_header{
     color: #000;
     text-shadow: 0.5px 0.5px 0.5px #444;
-    padding-top: 120px;
+    padding-top: 60px;
     padding-bottom: 120px;
     background: url('https://www.deon.pl/gfx/deon/pl/defaultaktualnosci/224/2922/1/d1289108860.jpg')center no-repeat;
     background-size: cover;
@@ -30,7 +30,11 @@
     padding-bottom: 120px;
     padding-left: calc(50% - 150px);
     background: url('https://www.bensound.com/bensound-img/november.jpg')left no-repeat;
-    background-size: 200%;
+    background-size: 220%;
+}
+
+.cr_example1 h2{
+    width: 100%;
 }
 
 .cr_example1 button{
@@ -69,7 +73,7 @@
 }
 
 .cr_example2{
-    padding: 60px 50px 80px 50px;
+    padding: 60px 5px 80px 5px;
     background: url('https://images.unsplash.com/photo-1474575767135-14237cca19dc?dpr=1&auto=compress,format&fit=crop&w=1500&h=&q=80&cs=tinysrgb&crop=')center no-repeat;
     background-size: cover;
 }
@@ -77,6 +81,11 @@
 .cr_example2 h2{
     width: 100%;
     text-align: center;
+}
+
+.cr_example2 p{
+    width: 80%;
+    margin: 0 auto;
 }
 
 .cr_example2 button{
@@ -124,10 +133,15 @@
 
 .cr_mobile_menu li{
     width: 100%;
-    height: 20px;
-    line-height: 20px;
+    height: 40px;
+    line-height: 40px;
     text-align: center;
     color: black;
+    cursor: pointer;
+}
+
+.cr_mobile_menu li:hover{
+    background: #ccc;
 }
 
 .mobilemenu3{
@@ -136,9 +150,22 @@
 }
 
 @media (min-width: 1220px){
+    
+    .cr_header{
+        padding-top: 120px;
+    }
+
+    .cr_example1{
+        background-size: cover;
+    }
+
     .phone{
         display: inline-block;
         margin: 5px 10px;
+    }
+
+    .cr_example2{
+        padding: 60px 100px 80px 100px;
     }
 
     .cr_example2 button{
