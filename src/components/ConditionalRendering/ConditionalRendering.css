@@ -69,7 +69,7 @@
 }
 
 .cr_example2{
-    padding: 120px 40px 120px 40px;
+    padding: 80px 40px 120px 40px;
     /* background: url('https://www.bensound.com/bensound-img/november.jpg')left no-repeat;
     background-size: 150%; */
     background: #ccc;
@@ -97,8 +97,16 @@
     display: block;
     margin: 5px auto 20px auto;
     background: url('https://d14cqo034m5st1.cloudfront.net/img/slider/design-mockup.png')center no-repeat;
-    background-size: cover;
-    /* overflow: hidden; */
+    background-size: 100%;
+}
+
+.phone_screen{
+    width: 188px;
+    height: 333px;
+    position: absolute;
+    left: 46px;
+    top: 58px;
+    overflow: hidden;
 }
 
 .cr_mobile_menu{
@@ -122,7 +130,20 @@
 }
 
 .mobilemenu3{
-    top: 59px;
-    left: 53px;
+    top: 2px;
+    left: 7px;
 }
 
+@media (min-width: 1220px){
+    .phone{
+        display: inline-block;
+        margin: 5px 10px;
+    }
+
+    .cr_example2 button{
+        position: relative;
+        left: 13%;
+        top: -460px;
+        cursor: pointer;
+    }
+}

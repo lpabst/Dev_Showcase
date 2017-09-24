@@ -85,25 +85,25 @@ class ConditionalRendering extends Component {
 
     if (this.state.showMobileMenu1){
       mm1Style = {
-        top: '59px',
-        left: '53px'
+        top: '2px',
+        left: '7px'
       }
     }else{
       mm1Style = {
-        top: '59px',
+        top: '2px',
         left: '300px'
       }
     }
     
     if (this.state.showMobileMenu2){
       mm2Style = {
-        top: '59px',
-        left: '53px'
+        top: '2px',
+        left: '7px'
       }
     }else{
       mm2Style = {
         top: '-250px',
-        left: '53px'
+        left: '7px'
       }
     }
         
@@ -145,35 +145,41 @@ class ConditionalRendering extends Component {
 
             <button onClick={ this.toggleMobileMenu1 }>Slide left</button>
             <div className='phone'>
-              <ul className='cr_mobile_menu mobilemenu1' style={mm1Style}>
-                <li>Home</li>
-                <li>Conditional Rendering</li>
-                <li>Themes</li>
-                <li>Modals</li>
-                <li>Events</li>
-              </ul>
+              <div className='phone_screen'>
+                <ul className='cr_mobile_menu mobilemenu1' style={mm1Style}>
+                  <li>Home</li>
+                  <li>Conditional Rendering</li>
+                  <li>Themes</li>
+                  <li>Modals</li>
+                  <li>Events</li>
+                </ul>
+              </div>
             </div>
 
             <button onClick={ this.toggleMobileMenu2 }>Slide down</button>
             <div className='phone'>
-              <ul className='cr_mobile_menu mobilemenu2' style={mm2Style}>
-                <li>Home</li>
-                <li>Conditional Rendering</li>
-                <li>Themes</li>
-                <li>Modals</li>
-                <li>Events</li>
-              </ul>
+              <div className='phone_screen'>
+                <ul className='cr_mobile_menu mobilemenu2' style={mm2Style}>
+                  <li>Home</li>
+                  <li>Conditional Rendering</li>
+                  <li>Themes</li>
+                  <li>Modals</li>
+                  <li>Events</li>
+                </ul>
+              </div>
             </div>
 
             <button onClick={ this.toggleMobileMenu3 }>Appear</button>
             <div className='phone'>
-              <ul className='cr_mobile_menu mobilemenu3' style={mm3Style}>
-                <li>Home</li>
-                <li>Conditional Rendering</li>
-                <li>Themes</li>
-                <li>Modals</li>
-                <li>Events</li>
-              </ul>
+              <div className='phone_screen'>
+                <ul className='cr_mobile_menu mobilemenu3' style={mm3Style}>
+                  <li>Home</li>
+                  <li>Conditional Rendering</li>
+                  <li>Themes</li>
+                  <li>Modals</li>
+                  <li>Events</li>
+                </ul>
+              </div>
             </div>
 
           </div>
