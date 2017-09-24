@@ -9,8 +9,8 @@ class SimpleBarChart extends Component {
         super(props);
         this.state = {
             data: [
-                {name: 'Yoga video testing long name', Views: 4005},
-                {name: 'Car Video another test', Views: 3004},
+                {name: 'Yoga video', Views: 4005},
+                {name: 'Car Video', Views: 3004},
                 {name: 'Bike Video', Views: 2023},
                 {name: 'Cat Video', Views: 2783},
                 {name: 'Dog Video', Views: 1890},
