@@ -80,12 +80,60 @@
     text-align: center;
 }
 
+.cr_example2 button{
+    position: relative;
+    left: 45%;
+    cursor: pointer;
+}
+
+.example_wrapper2{
+    padding: 40px 0px 40px 0px;
+}
+
 .phone{
-    width: 300px;
-    height: 500px;
+    width: 280px;
+    height: 450px;
     position: relative;
     display: block;
-    margin: 40px auto;
-    border: 1px solid blue;
+    margin: 5px auto 20px auto;
+    background: url('https://d14cqo034m5st1.cloudfront.net/img/slider/design-mockup.png')center no-repeat;
+    background-size: cover;
+    /* overflow: hidden; */
+}
+
+.cr_mobile_menu{
+    width: 180px;
+    height: 200px;
+    padding: 10px 0px 10px 0px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    background: #aaa;
+    position: absolute;
+    transition: all 0.5s;
+}
+
+.cr_mobile_menu li{
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: black;
+}
+
+.mobilemenu1{
+    top: 59px;
+    left: 300px;
+}
+
+.mobilemenu2{
+    top: -250px;
+    left: 53px;
+}
+
+.mobilemenu3{
+    top: 59px;
+    left: 53px;
+    opacity: 0;
 }
 

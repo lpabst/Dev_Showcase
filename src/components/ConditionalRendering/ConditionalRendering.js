@@ -83,7 +83,7 @@ class ConditionalRendering extends Component {
 
     let mobileMenu1, mobileMenu2, mobileMenu3;
     if (this.state.showMobileMenu1){
-      mobileMenu1 = <ul className='cr_mobile_menu'>
+      mobileMenu1 = <ul className='cr_mobile_menu mobilemenu1'>
           <li>Home</li>
           <li>Conditional Rendering</li>
           <li>Themes</li>
@@ -95,7 +95,7 @@ class ConditionalRendering extends Component {
     }
 
     if (this.state.showMobileMenu2){
-      mobileMenu2 = <ul className='cr_mobile_menu'>
+      mobileMenu2 = <ul className='cr_mobile_menu mobilemenu2'>
           <li>Home</li>
           <li>Conditional Rendering</li>
           <li>Themes</li>
@@ -107,7 +107,7 @@ class ConditionalRendering extends Component {
     }
 
     if (this.state.showMobileMenu3){
-      mobileMenu3 = <ul className='cr_mobile_menu'>
+      mobileMenu3 = <ul className='cr_mobile_menu mobilemenu3'>
           <li>Home</li>
           <li>Conditional Rendering</li>
           <li>Themes</li>
@@ -140,20 +140,24 @@ class ConditionalRendering extends Component {
         <section className='cr_example2'>
           <h2>Mobile Menus</h2>
           <p>Mobile menus are a great example of when to use conditional rendering. When the user clicks on the menu icon, the menu should toggle, as well as closing the menu based on other actions, such as scrolling, navigation through the website, etc...</p>
-          <div className='example_wrapper'>
+          <div className='example_wrapper2'>
+
+            <button onClick={ this.toggleMobileMenu1 }>Slide left</button>
             <div className='phone'>
               { mobileMenu1 }
             </div>
+
+            <button onClick={ this.toggleMobileMenu2 }>Slide down</button>
             <div className='phone'>
               { mobileMenu2 }
             </div>
+
+            <button onClick={ this.toggleMobileMenu3 }>Appear</button>
             <div className='phone'>
               { mobileMenu3 }
             </div>
+
           </div>
-          <button onClick={ this.toggleMobileMenu1 }>Slide left</button>
-          <button onClick={ this.toggleMobileMenu2 }>Slide down</button>
-          <button onClick={ this.toggleMobileMenu3 }>Appear</button>
         </section>
 
       </section>
