@@ -7,7 +7,8 @@ class NavHeader extends Component {
   constructor(props){
     super(props);
     this.state = {
-      showMobileMenu: false
+      showMobileMenu: false,
+      hideMobileMenu: false
     }
 
     this.adjustMenuForScreenSize = this.adjustMenuForScreenSize.bind(this);
@@ -44,13 +45,13 @@ class NavHeader extends Component {
   render() {
 
     let hamStyle = null;
-    let menuStlye = null;
+    let menuStyle = null;
     if (this.state.showMobileMenu){
       hamStyle = {'top': '-120px'}
-      menuStlye = {'right': '0px'}
+      menuStyle = {'right': '0px'}
     }else{
       hamStyle = {'top': '15px'}
-      menuStlye = {'right': '-350px'}     
+      menuStyle = {'right': '-950px'}     
     }
 
     return (
@@ -58,7 +59,7 @@ class NavHeader extends Component {
 
         <div className='ham' onClick={ this.openMobileMenu } style={hamStyle}>...</div>
 
-        <ul className='nav_list' style={menuStlye}>
+        <ul className='nav_list' id='nav_list' style={menuStyle}>
             <p onClick={ this.closeMobileMenu }>X</p>
             <Link to='/'>Home</Link>
             <Link to='/conditional-rendering'>Conditional Rendering</Link>
