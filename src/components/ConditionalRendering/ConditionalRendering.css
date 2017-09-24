@@ -69,10 +69,9 @@
 }
 
 .cr_example2{
-    padding: 80px 40px 120px 40px;
-    /* background: url('https://www.bensound.com/bensound-img/november.jpg')left no-repeat;
-    background-size: 150%; */
-    background: #ccc;
+    padding: 60px 50px 80px 50px;
+    background: url('https://images.unsplash.com/photo-1474575767135-14237cca19dc?dpr=1&auto=compress,format&fit=crop&w=1500&h=&q=80&cs=tinysrgb&crop=')center no-repeat;
+    background-size: cover;
 }
 
 .cr_example2 h2{
@@ -107,6 +106,8 @@
     left: 46px;
     top: 58px;
     overflow: hidden;
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYp2hTjzLeseA0X0Mwjw5965MHj9vLvbYMgmeanreOaphWLv4iPg')center no-repeat;
+    background-size: cover;
 }
 
 .cr_mobile_menu{
@@ -130,7 +131,7 @@
 }
 
 .mobilemenu3{
-    top: 2px;
+    top: 1px;
     left: 7px;
 }
 

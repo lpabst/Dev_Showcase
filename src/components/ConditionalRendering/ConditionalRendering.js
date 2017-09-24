@@ -85,19 +85,19 @@ class ConditionalRendering extends Component {
 
     if (this.state.showMobileMenu1){
       mm1Style = {
-        top: '2px',
+        top: '1px',
         left: '7px'
       }
     }else{
       mm1Style = {
-        top: '2px',
+        top: '1px',
         left: '300px'
       }
     }
     
     if (this.state.showMobileMenu2){
       mm2Style = {
-        top: '2px',
+        top: '1px',
         left: '7px'
       }
     }else{
