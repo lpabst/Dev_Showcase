@@ -68,4 +68,24 @@
     background: green;
 }
 
+.cr_example2{
+    padding: 120px 40px 120px 40px;
+    /* background: url('https://www.bensound.com/bensound-img/november.jpg')left no-repeat;
+    background-size: 150%; */
+    background: #ccc;
+}
+
+.cr_example2 h2{
+    width: 100%;
+    text-align: center;
+}
+
+.phone{
+    width: 300px;
+    height: 500px;
+    position: relative;
+    display: block;
+    margin: 40px auto;
+    border: 1px solid blue;
+}
 

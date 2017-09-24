@@ -6,14 +6,20 @@ class ConditionalRendering extends Component {
   constructor(props){
     super(props);
     this.state = {
-      showExample1: false,
+      showExample1: true,
       showExample2: false,
-      showExample3: false
+      showExample3: true,
+      showMobileMenu1: false,
+      showMobileMenu2: false,
+      showMobileMenu3: false
     }
 
     this.toggleExample1 = this.toggleExample1.bind(this);
     this.toggleExample2 = this.toggleExample2.bind(this);
     this.toggleExample3 = this.toggleExample3.bind(this);
+    this.toggleMobileMenu1 = this.toggleMobileMenu1.bind(this);
+    this.toggleMobileMenu2 = this.toggleMobileMenu2.bind(this);
+    this.toggleMobileMenu3 = this.toggleMobileMenu3.bind(this);
   }
 
   toggleExample1(){
@@ -31,6 +37,24 @@ class ConditionalRendering extends Component {
   toggleExample3(){
     this.setState({
       showExample3: !this.state.showExample3
+    })
+  }
+
+  toggleMobileMenu1(){
+    this.setState({
+      showMobileMenu1: !this.state.showMobileMenu1
+    })
+  }
+  
+  toggleMobileMenu2(){
+    this.setState({
+      showMobileMenu2: !this.state.showMobileMenu2
+    })
+  }
+    
+  toggleMobileMenu3(){
+    this.setState({
+      showMobileMenu3: !this.state.showMobileMenu3
     })
   }
 
@@ -57,6 +81,43 @@ class ConditionalRendering extends Component {
       example3 = null;
     }
 
+    let mobileMenu1, mobileMenu2, mobileMenu3;
+    if (this.state.showMobileMenu1){
+      mobileMenu1 = <ul className='cr_mobile_menu'>
+          <li>Home</li>
+          <li>Conditional Rendering</li>
+          <li>Themes</li>
+          <li>Modals</li>
+          <li>Events</li>
+        </ul>
+    }else{
+      mobileMenu1 = null;
+    }
+
+    if (this.state.showMobileMenu2){
+      mobileMenu2 = <ul className='cr_mobile_menu'>
+          <li>Home</li>
+          <li>Conditional Rendering</li>
+          <li>Themes</li>
+          <li>Modals</li>
+          <li>Events</li>
+        </ul>
+    }else{
+      mobileMenu2 = null;
+    }
+
+    if (this.state.showMobileMenu3){
+      mobileMenu3 = <ul className='cr_mobile_menu'>
+          <li>Home</li>
+          <li>Conditional Rendering</li>
+          <li>Themes</li>
+          <li>Modals</li>
+          <li>Events</li>
+        </ul>
+    }else{
+      mobileMenu3 = null;
+    }
+
     return (
       <section className="conditional_rendering">
 
@@ -74,6 +135,25 @@ class ConditionalRendering extends Component {
           <button onClick={ this.toggleExample1 }>Blue Box</button>
           <button onClick={ this.toggleExample2 }>Red Box</button>
           <button onClick={ this.toggleExample3 }>Green Box</button>
+        </section>
+
+        <section className='cr_example2'>
+          <h2>Mobile Menus</h2>
+          <p>Mobile menus are a great example of when to use conditional rendering. When the user clicks on the menu icon, the menu should toggle, as well as closing the menu based on other actions, such as scrolling, navigation through the website, etc...</p>
+          <div className='example_wrapper'>
+            <div className='phone'>
+              { mobileMenu1 }
+            </div>
+            <div className='phone'>
+              { mobileMenu2 }
+            </div>
+            <div className='phone'>
+              { mobileMenu3 }
+            </div>
+          </div>
+          <button onClick={ this.toggleMobileMenu1 }>Slide left</button>
+          <button onClick={ this.toggleMobileMenu2 }>Slide down</button>
+          <button onClick={ this.toggleMobileMenu3 }>Appear</button>
         </section>
 
       </section>
